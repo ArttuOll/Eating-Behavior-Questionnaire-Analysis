@@ -12,10 +12,6 @@ data$Makea[data$Makea < 0.5] <- 0
 data$Tayttava[data$Tayttava >= 0.5] <- 1
 data$Tayttava[data$Tayttava < 0.5] <- 0
 
-leveneTest(data$uniPoikkeama, group = data$Terveellinen)
-leveneTest(data$Ika, group = data$Terveellinen)
-leveneTest(data$Kyllaisyys, group = data$Terveellinen)
-
 sink("/home/bsuuv/Opinnot/RUOVA/Tutkimus/paa_analyysi.txt")
 
 #Terveellisyys
