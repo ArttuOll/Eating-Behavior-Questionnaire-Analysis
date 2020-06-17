@@ -3,8 +3,6 @@ source("/home/bsuuv/Opinnot/RUOVA/Tutkimus/tutkimusanalyysi_apufunktioita.R")
 #Luetaan data muuttujaan
 data <- formatRUOVAData("/home/bsuuv/Opinnot/RUOVA/Tutkimus/tutkimusdata.xlsx")
 
-#sink("/home/bsuuv/Opinnot/RUOVA/Tutkimus/populaation_kuvaus.txt")
-
 #Naisten ja miesten lukumäärät
 cat("\nLukumäärät sukupuolittain\n")
 summary(data$Sukupuoli)
@@ -41,6 +39,4 @@ cat("\nViimeyön poikkeama tavallisesta, kaikki\n")
 medianMeanSd(data$uniPoikkeama)
 
 sukupuolierot(data$uniPoikkeama)
-
-#sink()
 
