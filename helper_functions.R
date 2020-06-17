@@ -114,14 +114,6 @@ medianMeanSd <- function(data) {
   cat(round(sd(data), 2))
 }
 
-#Funktio ja tiedostoyhteys tulosten näyttämiseksi päätteessä sekä kirjoittamiseksi tiedostoon
-#fileConnection <- file("/home/bsuuv/Opinnot/RUOVA/Tutkimus/populaation_kuvaus.txt", open = "a")
-
-#printSave <- function(string) {
-#  cat(string)
-#  writeLines(string, fileConnection)
-#}
-
 #Funktio, joka tutkii sukupuolieroja annetun muuttujan suhteen
 sukupuolierot <- function(muuttuja) {
   cat("Ovatko varianssit yhtäsuuria?\n")
